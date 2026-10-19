@@ -1,0 +1,14 @@
+node_modules
+.next
+.env.local
+.env*.local
+*.tsbuildinfo
+coverage
+.env
+.env.*
+!.env.local.example
+.vercel
+*.pem
+*.key
+*.pfx
+*.log
