@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -63,6 +65,7 @@ export function LoginForm() {
       <button type="submit" disabled={isSubmitting}>
         {isSubmitting ? "Ingresando…" : "Ingresar al CRM"}
       </button>
+      <Link href="/recuperar-contrasena" className="text-link">Olvidé mi contraseña</Link>
     </form>
   );
 }
